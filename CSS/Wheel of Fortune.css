@@ -1,0 +1,267 @@
+.lottery-box{
+	width: 260px;
+	height: 260px;
+	margin: auto;
+	border: 20px solid #f58f2d;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0 4px #febd04;
+    position: absolute;
+    top: 50;
+    left: 50;
+}
+
+.illumination{
+    width: 200px;
+    height: 200px;
+    list-style: none;
+    margin: -20px 0 0 -20px;
+    padding: 0px;
+    position: absolute;
+    top: 50;
+    left: 50;
+    
+}
+
+.illumination li{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    top: 96;
+    left: 96;
+    margin: -4px 0 0 -4px;
+    border-radius: 4px;
+    transform: rotate(0deg) translateY(-136px);
+    animation: twinkling1 1.2s infinite ease-in-out;
+}
+
+@keyframes twinkling1{
+    0%{
+        background: #fefdfc;
+        border: 1px solid #fefdfc;
+    }   
+    25%{
+        background: #fefdfc;
+        border: none;
+        box-shadow: 0px 0px 0 2px #eb6f21;
+    }
+    75%{
+        background: #fefe00;
+        border: 1px solid #fefe00;
+    }
+    100%{
+        background: #fefe00;
+        border: none;
+        box-shadow: 0px 0px 0 2px #eb6f21;
+    }
+}
+
+.lottery-sector {
+    list-style: none;
+    width: 252px;
+    height: 252px;
+    position: absolute;
+    overflow: hidden;
+    margin: -50px 0 0 -50px;
+    top: 50;
+    left: 50;
+    border-radius: 50%;
+    border: 4px solid #febd04;
+    padding: 0px;
+}
+
+.lottery-sector li {
+    margin: 0;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    transform-origin: 100% 100%;
+    background-image: url(Pikachu.png);
+    /*animation: turning 4s forwards ease-in-out;*/
+    
+}
+
+.lottery-gift {
+    list-style: none;
+    width: 252px;
+    height: 252px;
+    position: absolute;
+    overflow: hidden;
+    margin: -50px 0 0 -50px;
+    top: 50;
+    left: 50;
+    padding: 0px;
+    /*list-style: none;
+    width: 252px;
+    height: 252px;
+    position: absolute;
+    top: 0;
+    left: -36;*/
+}
+
+.lottery-gift li {
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 125px;
+    color: #F44336;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+.lottery-gift li:nth-child(1) {
+    top: 30px;
+    left: 30px;
+}
+
+.lottery-gift li:nth-child(2) {
+    top: 20px;
+    left: 80px;
+}
+
+.lottery-gift li:nth-child(3) {
+    top: 55px;
+    left: 120px;
+}
+
+.lottery-gift li:nth-child(4) {
+    top: 90px;
+    left: 100px;
+}
+.lottery-gift li:nth-child(5) {
+    top: 100px;
+    left: 45px;
+}
+.lottery-gift li:nth-child(6) {
+    top: 70px;
+    left: 20px;
+}
+.draw_outer{
+    list-style: none;
+    width: 70px;
+	height: 70px;
+	border: 10px solid #fcb704;
+	border-radius: 50%;
+    margin: 35px 0 0 35px;
+    position: absolute;
+    padding: 0px;
+    top: 50;
+    left: 50;
+    
+}
+
+.draw_outer li{
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -1px;
+    border-radius: 1px;
+    transform: rotate(0deg) translateY(-36px);
+    animation: twinkling2 1.2s infinite ease-in-out;
+}
+
+@keyframes twinkling2{
+    0%{
+        background: #fefdfc;
+        border: 1px solid #fefdfc;
+    }   
+    25%{
+        background: #fefdfc;
+        border: none;
+    }
+    75%{
+        background: #fff;
+        border: 1px solid #fefdfc;
+    }
+    100%{
+        background: #fff;
+        border: none;
+    }
+}
+.draw_inner {
+    /*list-style: none;*/
+    width: 64x;
+	height: 64px;
+	border: 3px solid #fefdfc;
+    background-color: #f58f2d;
+	border-radius: 50%;
+    margin: 45px 0 0 45px;
+    position: absolute;
+    padding: 0px;
+    top: 50;
+    left: 50;
+    
+}
+.draw_inner li{
+    text-decoration-color: beige;
+}
+
+.pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid red;
+    margin: 20px 0 0 60px;
+    position: absolute;
+    top: 50;
+    left: 50;
+}
+
+.wrapper {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    /*background-color: aqua;*/
+}
+
+@keyframes spinIt1{
+    100%{
+        transform: rotate(60deg);
+    }
+}
+@keyframes spinIt2{
+    100%{
+        transform: rotate(120deg);
+    }
+}
+@keyframes spinIt3{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes spinIt4{
+    100%{
+        transform: rotate(240deg);
+    }
+}
+@keyframes spinIt5{
+    100%{
+        transform: rotate(300deg);
+    }
+}
+@keyframes spinIt6{
+    100%{
+        transform: rotate(300deg);
+    }
+}
+
+.draw_inner span {
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    color: #F44336;
+    font-size: 14px;
+    font-weight: bold;
+}
